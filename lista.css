@@ -1,0 +1,415 @@
+/* Regole generali */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline: 0;
+	font-family:'Varela Round', sans-serif;;
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+}
+div {
+	bordr: 1px solid black;
+}
+
+/*logo*/
+.logo {
+    width: 110px;
+    height: 120px;
+    position: fixed;
+    top: 30px;
+    left: 60px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Navbar*/
+#sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(48, 52, 103);
+    transition: .5s;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    color:#e5c642;
+  }
+  #menuBtn {
+    background-image:url(icone/menuGB.png);
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    position: fixed;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 1,5s;
+  }
+  
+  #menuBtn:hover {
+    background-image:url(icone/menuBG.png);
+   }
+
+/* corpo */
+.lista {
+    width: 100%;
+    margin-top: 120px;
+}
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 200%;
+}
+.elencoSx, .elencoDx {
+    width: 35%;
+    padding: 20px;
+    margin-bottom: 50px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f8f6f7;
+    border-radius: 10px;
+}
+.elencoSx {
+    margin-left: 12.5%;
+}
+.elencoDx {
+    margin-left: 5%;
+}
+.barr {
+    width: 100%;
+    border-top: 1px solid #303467;
+}
+.barr-responsive {
+    width: 100%;
+    border-top: 1px solid #303467;
+    visibility: hidden;
+}
+.attivita {
+    font-size: 24px;
+    color: rgb(48, 52, 103);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.indirizzo {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+.attivita, .simbolo {
+    display: inline-block;   
+}
+.simbolo {
+    float: right;
+    font-size: 60px;
+    color: #303467;
+}
+.indirizzo, .icona {
+    display: inline-block;
+}
+.icona {
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+}
+/*mappa*/
+.mappa {
+    width: 40%;
+    height: 420px;
+    margin: 0 0 40px 30%;
+}
+.mappa iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: rgb(48, 52, 103);
+  }
+  .iconeSocial {
+    margin-top: 85px;
+    left: 20px;
+    width: 50px;
+    height: 110px;
+    position: absolute;
+  }
+  .contenitore-fb {
+    margin-bottom: 10px;
+  }
+  .iconeSocial img {
+    width: 100%;
+    height: 100%;
+  }
+  .ft-element {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    left: 15%;
+    top: 40px;
+  }
+  .ft-logo, .ft-sx a, .ft-middle a, .ft-dx a{
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+  }
+  .ft-middle, .ft-dx {
+    color: white;
+  }
+  .ft-sx a:hover, .ft-middle a:hover, .ft-dx a:hover {
+    color: #e5c642;
+  }
+  .contenitoreiconeft {
+    top: 70px;
+    position: relative;
+    left: 32.5%;
+    width: 35%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .iconeft {
+    display: inline-block;
+    height: 100%;
+  }
+  .iconeft img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+        /*RISOLUZIONE LAPTOP*/
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+    
+/*logo*/
+.logo {
+    width: 100px;
+    height: 110px;
+}
+
+/* corpo */
+.lista {
+    margin-top: 100px;
+}
+.attivita {
+    font-size: 20px;
+}
+.indirizzo {
+    font-size: 18px;
+}
+.simbolo {
+    font-size: 55px;
+}
+.icona {
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+/*mappa*/
+.mappa {
+    height: 380px;
+    margin: 0 0 30px 30%;
+}
+}
+
+
+      /* RISOLUZIONE TABLET */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/*logo*/
+.logo {
+    width: 90px;
+    height: 100px;
+    left: 50px;
+}
+/* corpo */
+.lista {
+    margin-top: 90px;
+}
+.elencoTabletSmartphone {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #f8f6f7;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.elencoSx, .elencoDx {
+    width: 100%;
+    margin-bottom: 0px;
+    display: block;
+}
+.elencoSx {
+    margin-left: 0%;
+}
+.elencoDx {
+    margin: -20px 0 0 0;
+}
+.attivita {
+    font-size: 22px;
+}
+.indirizzo {
+    font-size: 20px;
+}
+.icona {
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+}
+.barr-responsive {
+    visibility: visible;
+}
+/*mappa*/
+.mappa {
+    width: 50%;
+    height: 280px;
+    margin: 0 0 40px 25%;
+}
+/* FOOTER */
+footer {
+    height: auto;
+  }
+  .ft-element {
+    display:block;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .ft-logo {
+    margin-bottom: 15px;
+  }
+  .contenitoreiconeft {
+    top: 0px;
+    left: 20%;
+    width: 60%;
+  }
+}
+
+
+      /*RISOLUZIONE SMARTPHONE*/
+@media (max-width: 767px) {
+
+/*logo*/
+.logo {
+    width: 80px;
+    height: 90px;
+    top: 20px;
+    left: 30px;
+}
+/* corpo */
+.lista {
+    width: 100%;
+    margin-top: 120px;
+}
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 150%;
+}
+.elencoTabletSmartphone {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #f8f6f7;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.elencoSx, .elencoDx {
+    width: 100%;
+    margin-bottom: 0px;
+    display: block;
+}
+.elencoSx {
+    margin-left: 0%;
+}
+.elencoDx {
+    margin: -20px 0 0 0;
+}
+
+.elencoSx, .elencoDx {
+    padding: 20px;
+}
+.attivita {
+    font-size: 22px;
+}
+.indirizzo {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 5px;
+}
+.attivita, .simbolo {
+    display: inline-block;   
+}
+.simbolo {
+    visibility: hidden;
+    font-size: 0px;
+}
+.indirizzo, .icona {
+    display: inline-block;
+}
+.icona {
+    margin: 0 0 40px 15px;
+    width: 40px;
+    height: 40px;
+}
+#responsive {
+    margin-right: 20px;
+}
+.barr-responsive {
+    visibility: visible;
+}
+/*mappa*/
+.mappa {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+}
+
+/* FOOTER */
+footer {
+    height: auto;
+  }
+  .iconeSocial {
+    margin-top: 70px;
+    left: 80%;
+    width: 50px;
+    height: 110px;
+  }
+  .ft-element {
+    display: block;
+    width: 80%;
+    left: 10%;
+    top: 30px;
+    margin-bottom: 60px;
+  }
+  .ft-logo {
+    margin-bottom: 20px;
+  }
+  .contenitoreiconeft {
+    top: 0px;
+    left: 5%;
+    width: 90%;
+  }
+  .iconeft {
+    width: 22%;
+  }
+}

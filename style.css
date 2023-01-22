@@ -1,0 +1,712 @@
+/*Regole generali*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline: 0;
+	font-family:'Varela Round', sans-serif;;
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+}
+div {
+	bordr: 1px solid black;
+}
+
+/*MENU*/
+#sidenav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  z-index: 2;
+  background-color: rgb(48, 52, 103);
+  transition: .5s;
+}
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color:#e5c642;
+}
+#menuBtn {
+  background-image:url(icone/menuGB.png);
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  right: 30px;
+  position: fixed;
+  top: 35px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 1,5s;
+}
+
+#menuBtn:hover {
+  background-image:url(icone/menuBG.png);
+ }
+/* HEADER */
+.testa {
+  height: 50vh;
+  background-image: url(immagini/bambino.png);
+  background-position: left center;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-color:   #f8f6f7;
+}
+
+/*HOME*/
+.logoTabletCellulare {
+  width: 120px;
+  height: 120px;
+  visibility: hidden;
+}
+.logoTabletCellulare img {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  width: 30%;
+  margin-left: 35%;
+  height: 35%;
+}
+.logo img {
+  width: 85%;
+  height: 100%;
+}
+.inizio {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 48vh;
+  left: 50%;
+  text-align: center;
+}
+.inizio h1 {
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 5px;
+  font-size: 300%;
+  line-height: 40px;
+}
+.inizio span {
+  font-size: smaller;
+}
+.inizio p {
+  font-size: 150%;
+}
+.pulsante {
+  width: 250px;
+  padding: 9px 25px;
+  background-color: rgb(48, 52, 103);
+  box-shadow: 0 10px  10px rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.7s;
+  color: white;
+  font-size: 100%;
+}
+.pulsante:hover {
+  margin-top: 5px;
+  box-shadow: 0 0 0 rgb(0, 0, 0);
+}
+
+/*SEZIONE SERVIZI*/
+.servizi {
+  height: 460px;
+  text-align: center;
+  font-size: 250%;
+}
+.servizi p {
+  margin-top: 30px;
+}
+.servizio1, .servizio2, .servizio3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  height: 70%;
+  position: static;
+  font-size: 50%;
+  margin-top: 15px;
+}
+.servizio1 {
+  left: 21%;
+}
+.servizio2 {
+  margin: 15px 5%;
+}
+.servizio1 h2, .servizio2 h2, .servizio3 h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.text-servizio1 p, .text-servizio2 p,.text-servizio3 p{
+  margin: 10px 0 0 0;
+}
+.allattare, .nutrire, .cambiare {
+  position: relative;
+  width: 70%;
+  height: 50%;
+  left: 15%;
+}
+.allattare img {
+  width: 100%;
+  height: 100%;
+}
+.nutrire img {
+  width: 100%;
+  height: 100%;
+}
+.cambiare img {
+  width: 100%;
+  height: 100%;
+}
+
+/*PRESENTAZIONE*/
+.presentazione  {
+  height: 550px;
+  background-color: #f8f6f7;
+  overflow: hidden;
+}
+.text-presentazione, .foto {
+  display: inline-block;
+  vertical-align: top;
+}
+.text-presentazione {
+  position: relative;
+  width: 40%;
+  height: auto;
+  top: 6%;
+  left: 15%;
+  overflow: hidden;
+  font-size:large;
+  text-align: justify;
+}
+.text-presentazione h2 {
+  margin-bottom: 20px;
+}
+.foto {
+  position: relative;
+  width: 25%;
+  height: 75%;
+  top: 6%;
+  left: 20%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url("immagini/filomena.jpg");
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.fotoResponsive {
+  position: relative;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url("immagini/filomena.jpg");
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+/* MODULO */
+.partner {
+  height: auto;
+}
+.modulo {
+	position: relative;
+	left: 25%;
+	margin: 60px 0 60px 0;
+	width: 50%;
+  color: #e5c642;
+	padding: 15px;
+	background-color: rgb(48, 52, 103);
+	text-align: center;
+	border-radius: 5px;
+}
+.modulo h2 {
+	margin-top: 15px;
+}
+.modulo p {
+	margin: 15px;
+}
+.modulo input {
+	width: 55%;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 15px;
+}
+.modulo textarea {
+	width: 55%;
+	height: 60px;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 3px;
+}
+label a {
+  color:#e5c642;
+}
+label a:hover {
+  color: white;
+}
+.bottone {
+	width: 250px;
+	padding: 9px 25px;
+  margin-top: 20px;
+	background-color: #e5c642;
+	cursor: pointer;
+	border-radius: 50px;
+	transition: 0.7s;
+  color: black;
+  font-size: 100%;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 280px;
+  background-color: rgb(48, 52, 103);
+}
+.iconeSocial {
+  margin-top: 85px;
+  left: 20px;
+  width: 50px;
+  height: 110px;
+  position: absolute;
+}
+.contenitore-fb {
+  margin-bottom: 10px;
+}
+.iconeSocial img {
+  width: 100%;
+  height: 100%;
+}
+.ft-element {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  left: 15%;
+  top: 40px;
+}
+.ft-logo, .ft-sx a, .ft-middle a, .ft-dx a{
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+}
+.ft-middle, .ft-dx {
+  color: white;
+}
+.ft-sx a:hover, .ft-middle a:hover, .ft-dx a:hover {
+  color: #e5c642;
+}
+.contenitoreiconeft {
+  top: 70px;
+  position: relative;
+  left: 32.5%;
+  width: 35%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconeft {
+  display: inline-block;
+  height: 100%;
+}
+.iconeft img {
+  width: 100%;
+  height: 100%;
+}
+
+
+      /*RISOLUZIONE LAPTOP*/
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+/*HOME*/
+.inizio h1 {
+  margin: 10px;
+  font-size: 250%;
+  line-height: 40px;
+}
+.inizio span {
+  font-size: smaller;
+}
+.inizio p {
+  font-size: 120%;
+}
+
+/*SEZIONE SERVIZI*/
+.servizi {
+  height: auto;
+}
+.servizi p {
+  font-size: 100%;
+  margin-top: 20px;
+}
+.servizio1 h2, .servizio2 h2, .servizio3 h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.text-servizio1 p, .text-servizio2 p,.text-servizio3 p{
+  margin: 10px 0 0 0;
+  font-size: 90%;
+}
+.servizio1, .servizio2, .servizio3 {
+  margin-bottom: 30px;
+}
+
+/*PRESENTAZIONE*/
+.presentazione  {
+  height: auto;
+}
+.text-presentazione {
+  height: 70%;
+  top: 15%;
+  overflow: hidden;
+  margin: 40px 0;
+  font-size: 110%;
+}
+.text-presentazione h2 {
+  margin-bottom: 10px;
+}
+.foto {
+  height: 294px;
+  top: 15%;
+  margin-top: 40px;
+}
+
+/* MODULO */
+.partner {
+  height: auto;
+}
+.modulo {
+	top: 5%;
+}
+.modulo p {
+	margin: 10px;
+}
+.modulo input {
+	width: 70%;
+	margin: 10px;
+}
+.modulo textarea {
+	width: 70%;
+	border-radius: 3px;
+}
+label {
+  font-size: 80%;
+}
+.bottone {
+	width: 70%;
+}
+}
+
+
+      /* RISOLUZIONE TABLET */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+/* HEADER */
+.testa {
+  height: 60vh;
+  background-position: left top;
+  background-size: 140% 100%;
+}
+
+/*HOME*/
+.logoTabletCellulare {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  visibility: visible;
+  z-index: 1;
+}
+.logo {
+  width: 0%;
+  margin-left: 0%;
+  height: 0%;
+  visibility: hidden;
+}
+.inizio {
+  top: 0px;
+  width: 100%;
+  height: 60vh;
+  left: 0%;
+  color: rgb(48, 52, 103);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.inizio h1 {
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 30%;
+  font-size: 350%;
+}
+.inizio p {
+  font-size: 160%;
+}
+
+/*SEZIONE SERVIZI*/
+.servizi {
+  height: auto;
+  font-size: 200%;
+}
+.servizio1, .servizio2, .servizio3 {
+  width: 25%;
+  height: 60%;
+  font-size: 60%;
+  margin: 0 0 40px 0 ;
+}
+.allattare, .nutrire, .cambiare {
+  width: 65%;
+  left: 17.5%;
+}
+.text-servizio1 p, .text-servizio2 p, .text-servizio3 p {
+  margin-top: 0px;
+}
+.text-servizio1 h2, .text-servizio2 h2, .text-servizio3 h2 {
+  margin-bottom: 0;
+}
+
+/*PRESENTAZIONE*/
+.presentazione  {
+  height: auto;
+}
+.text-presentazione {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  top: 10%;
+  left: 5%;
+  overflow: hidden;
+  margin: 40px 0 40px 0;
+}
+.text-presentazione h2 {
+  margin-bottom: 10px;
+}
+.foto {
+  width: 35%;
+  height: 304px;
+  top: 10%;
+  left: 10%;
+  background-size: auto 100%;
+  margin-top: 40px;
+}
+
+/* MODULO */
+.modulo {
+	left: 10%;
+	width: 80%;
+}
+.modulo input {
+	width: 70%;
+}
+.modulo textarea {
+	width: 70%;
+}
+.bottone {
+	width: 70%;
+}
+
+/* FOOTER */
+footer {
+  height: auto;
+}
+.ft-element {
+  display:block;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.ft-logo {
+  margin-bottom: 15px;
+}
+.contenitoreiconeft {
+  top: 0px;
+  left: 20%;
+  width: 60%;
+}
+}
+
+
+      /*RISOLUZIONE SMARTPHONE*/
+
+@media (max-width: 767px) {
+
+/* HEADER */
+.testa {
+  height: 60vh;
+  background-image: url(immagini/bambino.png);
+  background-position: left center;
+  background-size: 150% 100%;
+  background-repeat: no-repeat;
+  background-color:   #f8f6f7;
+}
+
+/*HOME*/
+.logoTabletCellulare {
+  width: 100px;
+  height: 100px;
+  top: 15px;
+  left: 15px;
+  position: relative;
+  visibility: visible;
+  z-index: 1;
+}
+.logo {
+  width: 0;
+  visibility: hidden;
+}
+.inizio {
+  top: 0px;
+  width: 100%;
+  height: 60vh;
+  left: 0%;
+  color: rgb(48, 52, 103);
+  background-color: rgba(255, 255, 255, .5);
+}
+.inizio h1 {
+  margin: 10px;
+  font-size: 250%;
+  line-height: 40px;
+}
+.inizio span {
+  font-size: smaller;
+}
+.inizio p {
+  padding: 0 15px;
+  font-size: 120%;
+  line-height: 30px;
+}
+.pulsante {
+	width: 230px;
+  margin-top: 0px;
+	border-radius: 45px;
+}
+.pulsante:hover {
+  margin-top: 5px;
+}
+
+/*SEZIONE SERVIZI*/
+.servizi {
+  height: auto;
+  text-align: center;
+}
+.servizi p {
+  font-size: 75%;
+  margin-top: 30px;
+}
+.servizio1, .servizio2, .servizio3 {
+  display: block;
+  width: 80%;
+  margin: 0 0 30px 10%;
+  height: 60%;
+}
+.servizio1 p, .servizio2 p, .servizio3 p {
+  font-size: 100%;
+  margin: 0;
+}
+.servizio3 {
+  margin-bottom: 30px;
+}
+.allattare, .nutrire, .cambiare {
+  width: 50%;
+  left: 25%;
+}
+
+/*PRESENTAZIONE*/
+.presentazione  {
+  height: auto;
+}
+.text-presentazione, .foto {
+  display: block;
+}
+.text-presentazione {
+  width: 80%;
+  height: auto;
+  margin: 20px 0 30px 0;
+  left: 10%;
+  overflow: hidden;
+}
+.text-presentazione h2 {
+  margin-bottom: 10px;
+}
+.foto {
+  visibility: hidden;
+}
+.fotoResponsive {
+  width: 80%;
+  height: 220px;
+  margin: 40px 0 0px 0;
+  left: 10%;
+  visibility: visible;
+}
+
+/* MODULO */
+.partner {
+  height: auto;
+}
+.modulo {
+	left: 10%;
+	margin: 40px 0 40px 0;
+	width: 80%;
+}
+.modulo p {
+	margin-bottom: 10px;
+}
+.modulo input {
+	width: 100%;
+	margin: 10px 0;
+}
+.modulo textarea {
+	width: 100%;
+	margin: 10px 0;
+}
+.bottone {
+	width: 80%;
+}
+label {
+  line-height: 15px;
+}
+
+/* FOOTER */
+footer {
+  height: auto;
+}
+.iconeSocial {
+  margin-top: 70px;
+  left: 80%;
+  width: 50px;
+  height: 110px;
+}
+.ft-element {
+  display: block;
+  width: 80%;
+  left: 10%;
+  top: 30px;
+  margin-bottom: 60px;
+}
+.ft-logo {
+  margin-bottom: 20px;
+}
+.contenitoreiconeft {
+  top: 0px;
+  left: 5%;
+  width: 90%;
+}
+.iconeft {
+  width: 22%;
+}
+}
