@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>BabyPoint Sardegna</title>
-  <meta name="description" content="Sei fuori casa e cerchi un luogo tranquillo per l'allattamento e/o il cambio del pannolino? Crescita Serena ti aiuta gratis: scopri qui il più vicino a te!">
+  <title>Baby Point Sardegna - Allattamento in tranquillità fuori città</title>
+  <meta name="description" content="Sei lontano da casa, non trovi un luogo sereno per allattare al seno e/o per il cambio del pannolino? Scopri quello più vicino a te o offrine uno, qui!">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Concert+One&family=Fredoka+One&family=Hammersmith+One&family=Londrina+Solid:wght@100;300;400;900&family=Nunito:wght@200;300;400;700&family=Varela+Round&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
     <p>Uno spazio dedicato a</p>
 
     <div class="servizio1">
-      <div class="allattare"><img src="icone/allattamento_gialla.png" alt="" title=""></div>
+      <div class="allattare"><img src="icone/allattamento_gialla.png" alt="icona gialla su sfondo bianco, mamma che sta allattando il proprio bebè" title="allattamento al seno"></div>
       <div  class="text-servizio1">
           <h2>Allattare</h2>
           <p>
@@ -58,7 +58,7 @@
     </div>
 
     <div class="servizio2">
-      <div class="nutrire"><img src="icone/pappa_gialla.png" alt="" title=""></div>
+      <div class="nutrire"><img src="icone/pappa_gialla.png" alt="icona gialla su sfondo bianco, bimbo/a seduto/a sul seggiolone per mangiare la pappa già pronta sul cucchiaio" title="svezzamento fuori casa"></div>
       <div  class="text-servizio2">
         <h2>Nutrire</h2>
         <p>
@@ -68,7 +68,7 @@
     </div>
 
     <div class="servizio3">
-      <div class="cambiare"><img src="icone/pannolino_gialla.png" alt="" title=""></div>
+      <div class="cambiare"><img src="icone/pannolino_gialla.png" alt="icona gialla su sfondo bianco, neonato/a sdraiato/a sul fasciatoio durante il cambio del pannolino" title="cambiare il pannolino al neonato/a"></div>
       <div  class="text-servizio3">
         <h2>Cambiare</h2>
         <p>
@@ -83,21 +83,21 @@
       <div class="fotoResponsive"> </div>
       <div class="text-presentazione">
         <p>
-          <strong>Baby Point Sardegna</strong> è il progetto di una rete di spazi dedicati ad allattare, nutrire, e
+          <strong>Baby Point Sardegna</strong> è il progetto di una rete di spazi dedicati ad allattare, svezzare e
           cambiare bimbe e bimbi in spazi chiusi pubblici e privati. Nasce da un'idea condivisa tra
           l'associazione <em>Centro Nascita Serena</em> e <em>NOI DONNE 2005</em> di Sassari.<br>
           I Baby Point potranno essere realizzati all'interno di uffici pubblici, negozi, bar, ristoranti,
           farmacie, studi medici, etc, che metteranno a disposizione della donna che allatta o del papà
-          che deve nutrire o cambiare il proprio bambino/a, semplicemente una sedia, e per chi ha lo
+          che deve svezzare o cambiare il proprio bambino/a, semplicemente una sedia, e per chi abbia lo
           spazio anche un tavolino per l'eventuale cambio del pannolino (non è necessario il fasciatoio,
           se c'è, tanto di guadagnato).
-          Questi luoghi pubblici o privati offriranno questo servizio, gratuitamente e senza l'utilizzo di
+          Questi luoghi pubblici o privati offriranno tale servizio, gratuitamente e senza l'utilizzo di
           sponsor o l'obbligo di acquisto di prodotti.
           <b>Per aderire basterà</b> inviare una e-mail a <b>babypointsardegna@gmail.com</b> o compilare il modulo sottostante, 
           specificando quali servizi si vogliono offrire con uno spazio dedicato ad <strong>allattare</strong>,
-          <strong>nutrire</strong> e/o <strong>cambiare il pannolino</strong>.<br>
+          <strong>svezzare</strong> e/o <strong>cambiare il pannolino</strong>.<br>
           Presso il Centro Nascita Serena a Sassari, si potrà ritirare l'adesivo e la locandina da
-          esporre per indicare l'adesione al progetto.          
+          esporre per indicare l'adesione al progetto.
         </p>
       </div>
       <div class="foto"> </div>
